@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raccoon Avatar Forge - Raccoon Gang Gallery</title>
+  <link rel="stylesheet" href="css/avatar.css">
+</head>
+<body>
+  <header>
+    <h1>Raccoon Avatar Forge</h1>
+    <a href="/index.html" class="back-link">Back to Gallery</a>
+  </header>
+  
+  <section class="avatar-forge">
+    <div class="controls">
+      <label for="handle">Twitter Handle:</label>
+      <input type="text" id="handle" placeholder="@YourName">
+      <label for="fur">Fur Color:</label>
+      <select id="fur">
+        <option value="gray">Gray</option>
+        <option value="brown">Brown</option>
+      </select>
+      <label for="prop">Prop:</label>
+      <select id="prop">
+        <option value="hat">Tiny Hat</option>
+        <option value="trash">Trash Can</option>
+      </select>
+      <button id="generate">Forge My Raccoon</button>
+      <button id="tweet">Tweet It!</button>
+    </div>
+    <canvas id="raccoonCanvas" width="400" height="400"></canvas>
+  </section>
+
+  <!-- Load avatar.js as a module -->
+  <script type="module" src="js/avatar.js"></script>
+</body>
+</html>
